@@ -1,0 +1,11 @@
+<h1>Players</h1>
+
+<% players.forEach((player) => { %>
+  <li><%= player %></li>
+<% }); %>
+
+<form action="/addplayer" method="POST">
+  <!-- name becomes a key in a key-value pair where the input text is the value in the POST req -->
+  <input type="text" name="newplayer" placeholder="player name" />
+  <button>Add this player</button>
+</form>
